@@ -29,7 +29,8 @@ function calculatesFarePrice(start, destination) {
   if (x <= 400){
     return 0;
   } else if (x > 400 && x <= 2000) {
-    return x * .02;
+    var y = x - 400
+    return y * .02;
   } else if (x > 2000 && x < 2500) {
     return 25;
   } else {
